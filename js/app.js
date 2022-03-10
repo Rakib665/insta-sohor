@@ -144,7 +144,8 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-   
+    let likedElement =  document.getElementById( "liked" );
+    likedElement.innerHTML = '';
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
         const div = createPost(post);
